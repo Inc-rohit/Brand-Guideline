@@ -985,6 +985,39 @@
     .ms-dot.active { background: #FA9628; }
 
 
+    /* ── Gradient Swatches ───────────────────────── */
+    .gradient-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .gradient-swatch {
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .gradient-preview {
+      height: 100px;
+      width: 100%;
+    }
+    .gradient-info {
+      padding: 12px 14px;
+      background: #fff;
+    }
+    .gradient-name {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
+      font-family: var(--font-head);
+    }
+    .gradient-val {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-family: var(--font-body);
+      line-height: 1.6;
+    }
+
     /* ── Toast ─────────────────────────────── */
     .toast {
       position: fixed;
@@ -1554,6 +1587,90 @@
           </div>
         </div>
       </div>
+
+
+      <div class="color-tier" style="margin-bottom:0;">
+        <div class="color-tier-header">
+          <span class="color-tier-label">Gradients</span>
+          <span class="color-tier-desc">Approved gradient combinations derived from the brand palette. Use for covers, hero backgrounds, event materials, and data visualisations. Never use gradients on body text.</span>
+        </div>
+        <div class="gradient-grid">
+
+          <div class="gradient-swatch">
+            <div class="gradient-preview" style="background: linear-gradient(135deg, #000000 0%, #131c4e 100%);"></div>
+            <div class="gradient-info">
+              <div class="gradient-name">Midnight</div>
+              <div class="gradient-val">#000000 → #131c4e<br/>135° Linear</div>
+            </div>
+          </div>
+
+          <div class="gradient-swatch">
+            <div class="gradient-preview" style="background: linear-gradient(135deg, #131c4e 0%, #14314D 100%);"></div>
+            <div class="gradient-info">
+              <div class="gradient-name">Deep Ocean</div>
+              <div class="gradient-val">#131c4e → #14314D<br/>135° Linear</div>
+            </div>
+          </div>
+
+          <div class="gradient-swatch">
+            <div class="gradient-preview" style="background: linear-gradient(135deg, #131c4e 0%, #7B2D8B 100%);"></div>
+            <div class="gradient-info">
+              <div class="gradient-name">Nebula</div>
+              <div class="gradient-val">#131c4e → #7B2D8B<br/>135° Linear</div>
+            </div>
+          </div>
+
+          <div class="gradient-swatch">
+            <div class="gradient-preview" style="background: linear-gradient(135deg, #14314D 0%, #7B2D8B 100%);"></div>
+            <div class="gradient-info">
+              <div class="gradient-name">Aurora</div>
+              <div class="gradient-val">#14314D → #7B2D8B<br/>135° Linear</div>
+            </div>
+          </div>
+
+          <div class="gradient-swatch">
+            <div class="gradient-preview" style="background: linear-gradient(135deg, #7B2D8B 0%, #FA9628 100%);"></div>
+            <div class="gradient-info">
+              <div class="gradient-name">Ember</div>
+              <div class="gradient-val">#7B2D8B → #FA9628<br/>135° Linear</div>
+            </div>
+          </div>
+
+          <div class="gradient-swatch">
+            <div class="gradient-preview" style="background: linear-gradient(135deg, #000000 0%, #7B2D8B 50%, #FA9628 100%);"></div>
+            <div class="gradient-info">
+              <div class="gradient-name">Brand Spectrum</div>
+              <div class="gradient-val">#000000 → #7B2D8B → #FA9628<br/>135° Linear · 3-stop</div>
+            </div>
+          </div>
+
+          <div class="gradient-swatch">
+            <div class="gradient-preview" style="background: linear-gradient(135deg, #131c4e 0%, #FA9628 100%);"></div>
+            <div class="gradient-info">
+              <div class="gradient-name">Ignite</div>
+              <div class="gradient-val">#131c4e → #FA9628<br/>135° Linear</div>
+            </div>
+          </div>
+
+          <div class="gradient-swatch">
+            <div class="gradient-preview" style="background: linear-gradient(180deg, #000000 0%, #131c4e 100%);"></div>
+            <div class="gradient-info">
+              <div class="gradient-name">Depth</div>
+              <div class="gradient-val">#000000 → #131c4e<br/>180° Linear (top→bottom)</div>
+            </div>
+          </div>
+
+          <div class="gradient-swatch">
+            <div class="gradient-preview" style="background: radial-gradient(circle at 30% 50%, #7B2D8B 0%, #131c4e 60%, #000000 100%);"></div>
+            <div class="gradient-info">
+              <div class="gradient-name">Radial Glow</div>
+              <div class="gradient-val">#7B2D8B → #131c4e → #000000<br/>Radial · center-left</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
 
       <hr class="divider" />
 
