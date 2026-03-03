@@ -934,14 +934,16 @@
     .ms-carousel {
       position: relative;
       width: 100%;
+      max-width: 100%;
       border-radius: 10px;
       overflow: hidden;
       background: #000;
       user-select: none;
+      box-sizing: border-box;
     }
-    .ms-track { display: flex; transition: transform 0.4s ease; }
-    .ms-slide { min-width: 100%; flex-shrink: 0; }
-    .ms-slide-img { width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover; }
+    .ms-track { display: flex; transition: transform 0.4s ease; width: 100%; }
+    .ms-slide { min-width: 100%; width: 100%; flex-shrink: 0; box-sizing: border-box; }
+    .ms-slide-img { width: 100%; height: auto; display: block; aspect-ratio: 16/9; object-fit: contain; }
     .ms-btn {
       position: absolute;
       top: 50%;
