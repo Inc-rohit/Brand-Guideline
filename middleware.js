@@ -1,22 +1,7 @@
-import { NextResponse } from 'next/server';
-
 const PASSWORD = 'incisiv26';
-const COOKIE = 'auth';
+const COOKIE_NAME = 'bg_auth';
 
-export function middleware(req) {
-  const url = req.nextUrl.clone();
-  const cookie = req.cookies.get(COOKIE)?.value;
-
-  // Already authenticated
-  if (cookie === PASSWORD) return NextResponse.next();
-
-  // Handle login form submission
-  if (req.method === 'POST') {
-    return NextResponse.next();
-  }
-
-  // Serve login page for unauthenticated requests
-  const loginHtml = `<!DOCTYPE html>
+const LOGIN_PAGE = `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -88,7 +73,7 @@ export function middleware(req) {
     document.getElementById('form').addEventListener('submit', async (e) => {
       e.preventDefault();
       const pwd = document.getElementById('pwd').value;
-      const res = await fetch('/api/auth', {
+      const res = await fetch('/_auth', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ password: pwd })
@@ -103,12 +88,38 @@ export function middleware(req) {
 </body>
 </html>`;
 
-  return new NextResponse(loginHtml, {
+export default async function middleware(req) {
+  const url = new URL(req.url);
+
+  // Handle auth POST
+  if (url.pathname === '/_auth' && req.method === 'POST') {
+    const body = await req.json();
+    if (body.password === PASSWORD) {
+      return new Response(JSON.stringify({ ok: true }), {
+        status: 200,
+        headers: {
+          'Content-Type': 'application/json',
+          'Set-Cookie': `${COOKIE_NAME}=${PASSWORD}; Path=/; HttpOnly; SameSite=Strict; Max-Age=86400`,
+        },
+      });
+    }
+    return new Response(JSON.stringify({ error: 'Invalid password' }), {
+      status: 401,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  }
+
+  // Check cookie
+  const cookie = req.headers.get('cookie') || '';
+  const authenticated = cookie.includes(`${COOKIE_NAME}=${PASSWORD}`);
+
+  if (authenticated) return fetch(req);
+
+  // Show login page
+  return new Response(LOGIN_PAGE, {
     status: 401,
     headers: { 'Content-Type': 'text/html' },
   });
 }
 
-export const config = {
-  matcher: ['/((?!api/auth|_next).*)'],
-};
+export const config = { matcher: '/(.*)', runtime: 'edge' };
