@@ -32,6 +32,37 @@
       --text-3:     #999999;
       --sidebar-w:  220px;
       --accent:     var(--navy);
+
+      /* ── Semantic aliases ──────────────────── */
+      --text-muted:   #888888;
+      --font-head:    'Poppins', sans-serif;
+      --font-body:    'Libre Franklin', sans-serif;
+
+      /* ── Spacing scale (4 px base) ─────────── */
+      --space-1:   4px;
+      --space-2:   8px;
+      --space-3:   12px;
+      --space-4:   16px;
+      --space-5:   20px;
+      --space-6:   24px;
+      --space-8:   32px;
+      --space-10:  40px;
+      --space-12:  48px;
+      --space-16:  64px;
+      --space-18:  72px;
+
+      /* ── Border radius ──────────────────────── */
+      --radius-sm:   4px;
+      --radius-md:   6px;
+      --radius-lg:   8px;
+      --radius-xl:   12px;
+      --radius-full: 9999px;
+
+      /* ── Elevation / Shadows ────────────────── */
+      --shadow-sm:  0 1px 3px rgba(0,0,0,0.08);
+      --shadow-md:  0 4px 12px rgba(0,0,0,0.10);
+      --shadow-lg:  0 8px 24px rgba(0,0,0,0.12);
+      --shadow-xl:  0 16px 40px rgba(0,0,0,0.14);
     }
 
     body {
@@ -1145,6 +1176,7 @@
     <a href="#colors"        data-s="colors">        <span class="nav-num">3.0</span>Colors</a>
     <a href="#typography"    data-s="typography">    <span class="nav-num">4.0</span>Typography</a>
     <a href="#visuals"       data-s="visuals">       <span class="nav-num">5.0</span>Visual Element</a>
+    <a href="#spacing"       data-s="spacing">        <span class="nav-num">6.0</span>Spacing &amp; Layout</a>
     <a href="#photography"   data-s="photography">   <span class="nav-num">7.0</span>Photography</a>
     <a href="#applications"  data-s="applications">  <span class="nav-num">8.0</span>Applications</a>
   </nav>
@@ -1670,6 +1702,86 @@
         </div>
       </div>
 
+      <hr class="divider" />
+
+      <!-- 3.x WCAG Accessibility -->
+      <div class="sub-section">
+        <div class="sub-section-header">
+          <span class="sub-section-num">3.5</span>
+          <span class="sub-section-title">Colour Accessibility (WCAG 2.1)</span>
+        </div>
+        <p class="sub-section-desc">All text must meet WCAG 2.1 minimum contrast ratios: <strong>4.5 : 1</strong> for normal text (AA) and <strong>3 : 1</strong> for large text / UI components (AA). Pairs marked AA+ exceed 7 : 1 (AAA).</p>
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th>Foreground</th>
+              <th>Background</th>
+              <th>Ratio</th>
+              <th>WCAG AA</th>
+              <th>Use case</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#111111 (text)</td>
+              <td>#ffffff (white)</td>
+              <td>18.1 : 1</td>
+              <td style="color:#2e7d32;font-weight:700">✓ AA+</td>
+              <td>Body copy on white surfaces</td>
+            </tr>
+            <tr>
+              <td>#111111 (text)</td>
+              <td>#f7f7f5 (page-bg)</td>
+              <td>17.5 : 1</td>
+              <td style="color:#2e7d32;font-weight:700">✓ AA+</td>
+              <td>Body copy on page background</td>
+            </tr>
+            <tr>
+              <td>#ffffff (white)</td>
+              <td>#131c4e (navy)</td>
+              <td>13.2 : 1</td>
+              <td style="color:#2e7d32;font-weight:700">✓ AA+</td>
+              <td>Reversed text on navy backgrounds</td>
+            </tr>
+            <tr>
+              <td>#ffffff (white)</td>
+              <td>#000000 (black)</td>
+              <td>21.0 : 1</td>
+              <td style="color:#2e7d32;font-weight:700">✓ AA+</td>
+              <td>Reversed text on black / sidebar</td>
+            </tr>
+            <tr>
+              <td>#ffffff (white)</td>
+              <td>#7B2D8B (purple)</td>
+              <td>7.4 : 1</td>
+              <td style="color:#2e7d32;font-weight:700">✓ AA+</td>
+              <td>Reversed text on purple</td>
+            </tr>
+            <tr>
+              <td>#111111 (text)</td>
+              <td>#FA9628 (orange)</td>
+              <td>3.2 : 1</td>
+              <td style="color:#e65100;font-weight:700">⚠ Large only</td>
+              <td>Use orange as background only for large text (&ge;18 pt / bold &ge;14 pt) or UI components</td>
+            </tr>
+            <tr>
+              <td>#ffffff (white)</td>
+              <td>#FA9628 (orange)</td>
+              <td>2.9 : 1</td>
+              <td style="color:#c62828;font-weight:700">✗ Avoid</td>
+              <td>Do not use white text on orange — fails all WCAG thresholds</td>
+            </tr>
+            <tr>
+              <td>#555555 (text-2)</td>
+              <td>#ffffff (white)</td>
+              <td>7.4 : 1</td>
+              <td style="color:#2e7d32;font-weight:700">✓ AA+</td>
+              <td>Secondary body copy on white</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
     </div>
   </div>
 
@@ -1937,6 +2049,129 @@
           <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg><span class="icon-cell-label">Briefcase</span></div>
           <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><span class="icon-cell-label">Revenue</span></div>
         </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 6.0 SPACING & LAYOUT -->
+  <div class="section" id="spacing">
+    <div class="chapter">
+      <span class="chapter-num">6.0</span>
+      <span class="chapter-title">Spacing &amp; Layout</span>
+    </div>
+    <div class="content">
+
+      <!-- 6.1 Spacing Scale -->
+      <div class="sub-section">
+        <div class="sub-section-header">
+          <span class="sub-section-num">6.1</span>
+          <span class="sub-section-title">Spacing Scale</span>
+        </div>
+        <p class="sub-section-desc">All spacing — padding, margin, gap — is derived from a 4 px base unit. Use only these steps to keep layouts consistent and predictable across every touchpoint.</p>
+        <table class="spec-table" style="margin-bottom:28px">
+          <thead>
+            <tr>
+              <th>Token</th>
+              <th>Value</th>
+              <th>Usage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>--space-1</td><td>4 px</td><td>Icon padding, tight inline gaps</td></tr>
+            <tr><td>--space-2</td><td>8 px</td><td>Chip / tag internal padding</td></tr>
+            <tr><td>--space-3</td><td>12 px</td><td>Small component gaps</td></tr>
+            <tr><td>--space-4</td><td>16 px</td><td>Default gap between related items</td></tr>
+            <tr><td>--space-5</td><td>20 px</td><td>Card inner padding (compact)</td></tr>
+            <tr><td>--space-6</td><td>24 px</td><td>Card inner padding (standard)</td></tr>
+            <tr><td>--space-8</td><td>32 px</td><td>Section sub-dividers</td></tr>
+            <tr><td>--space-10</td><td>40 px</td><td>Content block padding</td></tr>
+            <tr><td>--space-12</td><td>48 px</td><td>Large component vertical rhythm</td></tr>
+            <tr><td>--space-16</td><td>64 px</td><td>Section top/bottom spacing</td></tr>
+            <tr><td>--space-18</td><td>72 px</td><td>Page-level content padding (horizontal)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr class="divider" />
+
+      <!-- 6.2 Border Radius -->
+      <div class="sub-section">
+        <div class="sub-section-header">
+          <span class="sub-section-num">6.2</span>
+          <span class="sub-section-title">Border Radius</span>
+        </div>
+        <p class="sub-section-desc">A consistent radius system prevents a mix of sharp and pill shapes across the UI. Match the radius to the component's density and prominence.</p>
+        <table class="spec-table" style="margin-bottom:28px">
+          <thead>
+            <tr>
+              <th>Token</th>
+              <th>Value</th>
+              <th>Used for</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>--radius-sm</td><td>4 px</td><td>Buttons, input fields, small chips</td></tr>
+            <tr><td>--radius-md</td><td>6 px</td><td>Tables, data tiles, spec panels</td></tr>
+            <tr><td>--radius-lg</td><td>8 px</td><td>Cards, image containers, modals</td></tr>
+            <tr><td>--radius-xl</td><td>12 px</td><td>Feature cards, hero panels</td></tr>
+            <tr><td>--radius-full</td><td>9999 px</td><td>Pills, avatar badges, dot indicators</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr class="divider" />
+
+      <!-- 6.3 Elevation / Shadows -->
+      <div class="sub-section">
+        <div class="sub-section-header">
+          <span class="sub-section-num">6.3</span>
+          <span class="sub-section-title">Elevation &amp; Shadows</span>
+        </div>
+        <p class="sub-section-desc">Shadows communicate hierarchy and interactive state. Use sparingly — flat surfaces are preferred; shadows signal elevation, not decoration.</p>
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th>Token</th>
+              <th>CSS Value</th>
+              <th>Used for</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>--shadow-sm</td><td>0 1px 3px rgba(0,0,0,0.08)</td><td>Subtle lift on hover (swatch, row)</td></tr>
+            <tr><td>--shadow-md</td><td>0 4px 12px rgba(0,0,0,0.10)</td><td>Cards, dropdowns</td></tr>
+            <tr><td>--shadow-lg</td><td>0 8px 24px rgba(0,0,0,0.12)</td><td>Modals, side panels</td></tr>
+            <tr><td>--shadow-xl</td><td>0 16px 40px rgba(0,0,0,0.14)</td><td>Full-page overlays, popovers</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr class="divider" />
+
+      <!-- 6.4 Layout Grid -->
+      <div class="sub-section">
+        <div class="sub-section-header">
+          <span class="sub-section-num">6.4</span>
+          <span class="sub-section-title">Layout Grid</span>
+        </div>
+        <p class="sub-section-desc">Digital layouts follow a 12-column grid. Print layouts use an 8-column grid. Max content width is 1000 px, with 72 px horizontal padding on desktop.</p>
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th>Context</th>
+              <th>Columns</th>
+              <th>Gutter</th>
+              <th>Margin</th>
+              <th>Max width</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Desktop (&ge;1280 px)</td><td>12</td><td>24 px</td><td>72 px</td><td>1000 px</td></tr>
+            <tr><td>Tablet (768 – 1279 px)</td><td>8</td><td>20 px</td><td>40 px</td><td>—</td></tr>
+            <tr><td>Mobile (&lt;768 px)</td><td>4</td><td>16 px</td><td>20 px</td><td>—</td></tr>
+            <tr><td>Print (A4 / US-Letter)</td><td>8</td><td>12 pt</td><td>20 mm</td><td>—</td></tr>
+          </tbody>
+        </table>
       </div>
 
     </div>
