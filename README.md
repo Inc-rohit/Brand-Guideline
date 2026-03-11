@@ -18,12 +18,12 @@ Brand-Guideline/
     ├── Logo/
     │   └── Incisiv Logo.svg             # Master logo (use this for all production work)
     ├── Photography/
-    │   ├── shutterstock_offset_1877335966.jpg   # Aerial & Architectural
-    │   ├── shutterstock_offset_1958691904.jpg   # Infrastructure & Supply Chain
-    │   ├── stills_63723_gs-co.jpg               # Technology & Retail Environments
-    │   ├── stills_63723_gx-co.jpg               # Photography direction 4
-    │   ├── stills_63723_gr-co.jpg               # Photography direction 5
-    │   └── stills_63723_Lx-co.jpg              # Photography direction 6
+    │   ├── stills_63723_gx-co.jpg
+    │   ├── stills_63723_gr-co.jpg
+    │   ├── stills_63723_Lx-co.jpg
+    │   ├── stills_63723_fr-cx.jpg
+    │   ├── stills_63723_xr-vx.jpg
+    │   └── stills_63723_ur-cx.jpg
     └── Social Posts/
         ├── Post 1.jpg                   # LinkedIn stat card example
         └── Post 2.jpg                   # Instagram stat card example
@@ -111,14 +111,14 @@ Or read `llms.txt` for a plain-text summary of all tokens.
 
 All photos are in `Assets/Photography/`. Three approved directions:
 
-| File | Direction | Style |
-|---|---|---|
-| `shutterstock_offset_1877335966.jpg` | Aerial & Architectural | Cool-toned, wide angle, sharp focus |
-| `shutterstock_offset_1958691904.jpg` | Infrastructure & Supply Chain | Dramatic scale, geometric, landscape |
-| `stills_63723_gs-co.jpg` | Technology & Retail Environments | Symmetrical, organised, cool tones |
-| `stills_63723_gx-co.jpg` | Photography direction 4 | — |
-| `stills_63723_gr-co.jpg` | Photography direction 5 | — |
-| `stills_63723_Lx-co.jpg` | Photography direction 6 | — |
+| File |
+|---|
+| `stills_63723_gx-co.jpg` |
+| `stills_63723_gr-co.jpg` |
+| `stills_63723_Lx-co.jpg` |
+| `stills_63723_fr-cx.jpg` |
+| `stills_63723_xr-vx.jpg` |
+| `stills_63723_ur-cx.jpg` |
 
 ---
 
