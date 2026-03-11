@@ -3,7 +3,7 @@
 Official brand identity system for Incisiv — a B2B retail technology intelligence company.
 
 **Live site:** https://brand-guideline-three.vercel.app  
-**Download assets:** https://www.dropbox.com/scl/fo/2dmazrwys3f3hqprc2fsa/AEXLm6HG_AJM8hOBTyqUFTA?rlkey=yz0f15sm1wdi98rwwla2v631m&st=z8y6j6ov&dl=0
+**Download assets:** https://github.com/Inc-rohit/Brand-Guideline/tree/main/Assets
 
 ---
 
@@ -20,7 +20,10 @@ Brand-Guideline/
     ├── Photography/
     │   ├── shutterstock_offset_1877335966.jpg   # Aerial & Architectural
     │   ├── shutterstock_offset_1958691904.jpg   # Infrastructure & Supply Chain
-    │   └── stills_63723_gs-co.jpg               # Technology & Retail Environments
+    │   ├── stills_63723_gs-co.jpg               # Technology & Retail Environments
+    │   ├── stills_63723_gx-co.jpg               # Photography direction 4
+    │   ├── stills_63723_gr-co.jpg               # Photography direction 5
+    │   └── stills_63723_Lx-co.jpg              # Photography direction 6
     └── Social Posts/
         ├── Post 1.jpg                   # LinkedIn stat card example
         └── Post 2.jpg                   # Instagram stat card example
@@ -113,6 +116,9 @@ All photos are in `Assets/Photography/`. Three approved directions:
 | `shutterstock_offset_1877335966.jpg` | Aerial & Architectural | Cool-toned, wide angle, sharp focus |
 | `shutterstock_offset_1958691904.jpg` | Infrastructure & Supply Chain | Dramatic scale, geometric, landscape |
 | `stills_63723_gs-co.jpg` | Technology & Retail Environments | Symmetrical, organised, cool tones |
+| `stills_63723_gx-co.jpg` | Photography direction 4 | — |
+| `stills_63723_gr-co.jpg` | Photography direction 5 | — |
+| `stills_63723_Lx-co.jpg` | Photography direction 6 | — |
 
 ---
 
