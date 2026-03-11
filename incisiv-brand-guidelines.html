@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="Incisiv Brand Guidelines 2026 — official brand token reference covering colors, typography, logo usage, icons (Lucide), photography, and application templates." />
+  <meta name="author" content="Incisiv" />
+  <meta name="keywords" content="Incisiv, brand guidelines, design tokens, colors, typography, Poppins, Libre Franklin, Lucide icons, navy, orange" />
+  <meta property="og:title" content="Incisiv Brand Guidelines 2026" />
+  <meta property="og:description" content="Official brand system for Incisiv — colors, typography, logo, icons, and application templates." />
   <title>Incisiv's Brand Guideline 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -810,6 +815,7 @@
     .icon-cell:nth-child(7n) { border-right: none; }
     .icon-cell:nth-last-child(-n+7) { border-bottom: none; }
     .icon-cell svg { width: 22px; height: 22px; stroke: var(--text-2); }
+    .icon-cell i { display: flex; align-items: center; justify-content: center; }
     .icon-cell-label { font-size: 9.5px; color: var(--text-3); text-align: center; }
 
     /* ── PHOTOGRAPHY ─────────────────────────────── */
@@ -1129,6 +1135,433 @@
       color: white;
     }
 </style>
+
+<!-- ══════════════════════════════════════════════════════════════════
+     INCISIV BRAND DATA — Machine-readable token reference
+     For AI agents, code generators, and design tools.
+     Parse: JSON.parse(document.getElementById('incisiv-brand-data').textContent)
+     All brand decisions — colors, typography, icons, logo rules — are encoded here.
+════════════════════════════════════════════════════════════════════ -->
+<script type="application/json" id="incisiv-brand-data">
+{
+  "_meta": {
+    "document": "Incisiv Brand Guidelines",
+    "version": "1.0",
+    "published": "April 2026",
+    "audience": "All Teams & Partners",
+    "logoSvg": "Assets/Logo/Incisiv Logo.svg",
+    "photography": ["Assets/Photography/shutterstock_offset_1877335966.jpg", "Assets/Photography/shutterstock_offset_1958691904.jpg", "Assets/Photography/stills_63723_gs-co.jpg"],
+    "socialPosts": ["Assets/Social Posts/Post 1.jpg", "Assets/Social Posts/Post 2.jpg"],
+    "assetsUrl": "https://www.dropbox.com/scl/fo/2dmazrwys3f3hqprc2fsa/AEXLm6HG_AJM8hOBTyqUFTA?rlkey=yz0f15sm1wdi98rwwla2v631m&st=z8y6j6ov&dl=0",
+    "purpose": "Machine-readable brand token reference for AI agents, code generators, and design tools"
+  },
+  "brand": {
+    "name": "Incisiv",
+    "industry": "B2B Retail Technology Intelligence",
+    "positioning": {
+      "purpose": "To empower retail and consumer industry leaders with the intelligence, insights, and connections needed to accelerate digital transformation and drive measurable business outcomes.",
+      "vision": "To be the world's most trusted intelligence platform for the retail and consumer industry — enabling leaders to make faster, smarter decisions with confidence.",
+      "mission": "To provide industry leaders with actionable research, peer connections, and strategic advisory that accelerates the adoption of transformative technologies."
+    },
+    "values": [
+      "Creative",
+      "Accurate",
+      "Inclusive",
+      "Bold",
+      "Reliable"
+    ],
+    "toneOfVoice": {
+      "Adaptable": "Flex voice to suit audience — authoritative in research, warm at events, energetic on social. Confidence without rigidity.",
+      "Purposeful": "Every word earns its place. Communicate with clarity and intent — no filler, no jargon for its own sake.",
+      "Collaborative": "Speak with audience, not at them. Invite dialogue, acknowledge perspectives, champion shared progress.",
+      "Future-Driven": "Lead with what's next. Forward-looking, optimistic, grounded in real forces shaping the industry."
+    }
+  },
+  "colors": {
+    "primary": [
+      {
+        "name": "Black",
+        "token": "--black",
+        "hex": "#000000",
+        "rgb": "0, 0, 0",
+        "cmyk": "0, 0, 0, 100",
+        "role": "Primary. Cover backgrounds, primary headlines, logo. Dominant — drives authority and confidence."
+      }
+    ],
+    "secondary": [
+      {
+        "name": "Navy",
+        "token": "--navy",
+        "hex": "#131c4e",
+        "rgb": "19, 28, 78",
+        "cmyk": "76, 64, 0, 69",
+        "role": "Secondary. Section headers, chapter backgrounds, dark UI components. Brand workhorse."
+      }
+    ],
+    "tertiary": [
+      {
+        "name": "Purple",
+        "token": "--purple",
+        "hex": "#7B2D8B",
+        "rgb": "123, 45, 139",
+        "cmyk": "12, 68, 0, 45",
+        "role": "Accent. Headlines and emphasis in research reports and event materials. Never use as a large background. Pairs with navy for headings."
+      },
+      {
+        "name": "Dark Teal",
+        "token": "--teal",
+        "hex": "#14314D",
+        "rgb": "20, 49, 77",
+        "cmyk": "74, 36, 0, 70",
+        "role": "Accent. Gradient backgrounds paired with navy. Report cards, callout boxes, dark UI components."
+      },
+      {
+        "name": "Orange",
+        "token": "--orange",
+        "hex": "#FA9628",
+        "rgb": "250, 150, 40",
+        "cmyk": "0, 40, 84, 2",
+        "role": "High-energy accent. CTAs, data callout numbers, event highlights. SPARINGLY — maximum one element per layout."
+      }
+    ],
+    "neutrals": [
+      {
+        "name": "Dark Gray",
+        "token": "--gray-dark",
+        "hex": "#5b5b5b",
+        "role": "Secondary body text"
+      },
+      {
+        "name": "Mid Gray",
+        "token": "--gray-mid",
+        "hex": "#a0a0a0",
+        "role": "Metadata, captions"
+      },
+      {
+        "name": "Light Gray",
+        "token": "--gray-light",
+        "hex": "#e8e8e8",
+        "role": "Subtle dividers, backgrounds"
+      },
+      {
+        "name": "White",
+        "token": "--white",
+        "hex": "#ffffff",
+        "role": "Light surfaces, reversed text"
+      }
+    ],
+    "gradients": [
+      {
+        "name": "Nebula",
+        "css": "linear-gradient(135deg, #131c4e 0%, #7B2D8B 100%)",
+        "stops": [
+          "#131c4e",
+          "#7B2D8B"
+        ],
+        "angle": 135,
+        "use": "Covers, hero backgrounds, event materials, data visualizations"
+      },
+      {
+        "name": "Deep Ocean",
+        "css": "linear-gradient(135deg, #131c4e 0%, #14314D 100%)",
+        "stops": [
+          "#131c4e",
+          "#14314D"
+        ],
+        "angle": 135,
+        "use": "Covers, hero backgrounds"
+      },
+      {
+        "name": "Midnight",
+        "css": "linear-gradient(135deg, #000000 0%, #131c4e 100%)",
+        "stops": [
+          "#000000",
+          "#131c4e"
+        ],
+        "angle": 135,
+        "use": "Covers, hero backgrounds"
+      }
+    ],
+    "rules": [
+      "Never use gradients on body text",
+      "Tertiary accent colors never as large backgrounds",
+      "Orange: maximum one element per layout",
+      "White logo on dark backgrounds (black, navy); black logo on light backgrounds (white, light gray)"
+    ]
+  },
+  "typography": {
+    "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;1,400&display=swap",
+    "fonts": [
+      {
+        "name": "Poppins",
+        "source": "Google Fonts",
+        "use": "All headlines, display text, large callouts, UI labels",
+        "weights": [
+          300,
+          400,
+          500,
+          600,
+          700,
+          800
+        ],
+        "rule": "Exclusive to headlines, display, callouts. Never substitute."
+      },
+      {
+        "name": "Libre Franklin",
+        "source": "Google Fonts",
+        "use": "Body copy, UI elements, captions, buttons",
+        "weights": [
+          400,
+          500,
+          600
+        ],
+        "styles": [
+          "italic"
+        ],
+        "rule": "All non-headline text. Never substitute."
+      }
+    ],
+    "scale": [
+      {
+        "role": "H1",
+        "font": "Poppins",
+        "weight": 700,
+        "size": "40px",
+        "lineHeight": 1.15,
+        "letterSpacing": "-0.02em",
+        "use": "Page titles, report headers, hero headlines"
+      },
+      {
+        "role": "H2",
+        "font": "Poppins",
+        "weight": 600,
+        "size": "24px",
+        "lineHeight": 1.3,
+        "letterSpacing": "-0.01em",
+        "use": "Section titles, slide headers, card titles"
+      },
+      {
+        "role": "H3",
+        "font": "Poppins",
+        "weight": 500,
+        "size": "18px",
+        "lineHeight": 1.4,
+        "use": "Sub-sections, callout titles, sidebar headers"
+      },
+      {
+        "role": "Body",
+        "font": "Libre Franklin",
+        "weight": 400,
+        "size": "16px",
+        "lineHeight": 1.75,
+        "use": "Paragraphs, descriptions, report body copy"
+      },
+      {
+        "role": "Caption",
+        "font": "Libre Franklin",
+        "weight": 400,
+        "size": "13px",
+        "lineHeight": 1.6,
+        "color": "#999999",
+        "use": "Image captions, footnotes, metadata"
+      },
+      {
+        "role": "Label",
+        "font": "Libre Franklin",
+        "weight": 600,
+        "size": "11px",
+        "letterSpacing": "0.1em",
+        "textTransform": "uppercase",
+        "use": "Section labels, tags, category markers"
+      },
+      {
+        "role": "Button",
+        "font": "Libre Franklin",
+        "weight": 600,
+        "size": "14px",
+        "borderRadius": "4px",
+        "padding": "10px 24px",
+        "use": "CTAs, navigation actions, form buttons"
+      }
+    ]
+  },
+  "logo": {
+    "components": {
+      "logomark": "Abstract symbol — cluster of connected nodes representing data, connectivity, and insight. Use alone only in favicons, social avatars, or where brand is already established.",
+      "logotype": "Wordmark INCISIV. Wide letter-spacing, bold weight.",
+      "primaryLockup": "Logomark + logotype combined. DEFAULT — use unless space constraints require logomark alone."
+    },
+    "clearspace": "Minimum clearspace equals height of the logomark on all four sides.",
+    "minimumSize": {
+      "logomarkOnly": {
+        "print": "10mm",
+        "digital": "50px",
+        "use": "Favicons, social avatars, tight spaces"
+      },
+      "logotypeOnly": {
+        "print": "50mm",
+        "digital": "150px",
+        "use": "When brand context already established"
+      },
+      "fullLogo": {
+        "print": "50mm",
+        "digital": "150px",
+        "use": "Default usage across all materials"
+      }
+    },
+    "backgroundUsage": {
+      "onWhite": "Black logo",
+      "onLightGray": "Black logo",
+      "onBlack": "White logo",
+      "onNavy": "White logo",
+      "rule": "Never place on busy or low-contrast backgrounds"
+    },
+    "misuse": [
+      "Do not stretch or distort",
+      "Do not rotate at any angle",
+      "Do not place in a container or badge",
+      "Do not flip horizontally",
+      "Do not flip vertically",
+      "Do not skew or shear the logo"
+    ]
+  },
+  "icons": {
+    "library": "Lucide Icons",
+    "url": "https://lucide.dev/icons",
+    "cdn": "https://unpkg.com/lucide@latest/dist/umd/lucide.min.js",
+    "license": "MIT",
+    "style": "Outline/line — never filled",
+    "strokeWeight": "1.5px",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "color": "Monochrome — match icon color to text color of its surface",
+    "rules": [
+      "Always use outline style, never filled icons",
+      "Reference icons by exact Lucide name (e.g. bar-chart-2, map-pin)",
+      "Do not mix outline icons with filled icons in the same layout"
+    ],
+    "approvedIcons": [
+      "phone",
+      "globe",
+      "map-pin",
+      "mail",
+      "user",
+      "search",
+      "clock",
+      "message-square",
+      "settings",
+      "wifi",
+      "shield-check",
+      "store",
+      "monitor",
+      "activity",
+      "smartphone",
+      "bar-chart-2",
+      "trending-up",
+      "info",
+      "file-text",
+      "package",
+      "shopping-cart",
+      "credit-card",
+      "users",
+      "home",
+      "lock",
+      "terminal",
+      "upload",
+      "download",
+      "sun",
+      "shield",
+      "briefcase"
+    ]
+  },
+  "photography": {
+    "principle": "Precise, professional, grounded in the real world of retail and commerce. Forward-looking and credible — not generic stock.",
+    "directions": [
+      {
+        "id": "direction-01",
+        "title": "Aerial & Architectural",
+        "description": "Top-down views of infrastructure and logistics. Sense of scale, precision, and command.",
+        "tags": [
+          "Cool-toned",
+          "Sharp focus",
+          "Wide angle"
+        ]
+      },
+      {
+        "id": "direction-02",
+        "title": "Infrastructure & Supply Chain",
+        "description": "Elevated perspectives on transportation, distribution, and commerce networks. Forward-looking and precise.",
+        "tags": [
+          "Dramatic scale",
+          "Geometric",
+          "Landscape"
+        ]
+      },
+      {
+        "id": "direction-03",
+        "title": "Technology & Retail Environments",
+        "description": "Automated and organised retail spaces. Symmetrical, clean, forward-looking.",
+        "tags": [
+          "Symmetrical",
+          "Organised",
+          "Cool tones"
+        ]
+      }
+    ],
+    "dos": [
+      "Use bright, high-contrast images with clear subject matter",
+      "Use aerial or architectural photography for editorial contexts",
+      "Maintain consistent cool-toned color treatment across all imagery",
+      "Prefer wide, landscape-oriented images for editorial use"
+    ],
+    "donts": [
+      "Do not use blurry or out-of-focus photography",
+      "Do not use warm, oversaturated, or heavily filtered images",
+      "Do not use generic stock imagery that feels impersonal"
+    ]
+  },
+  "applications": {
+    "socialMedia": {
+      "primaryFormat": "Stat cards — logo top-left, large bold statistic (Poppins weight 800), one-line descriptor, source/report footer",
+      "backgrounds": [
+        "Navy #131c4e",
+        "Black #000000",
+        "Navy-to-teal gradient"
+      ],
+      "logoVersion": "Always white logo on dark backgrounds",
+      "rule": "Never place colored text on light backgrounds",
+      "formats": [
+        {
+          "platform": "LinkedIn",
+          "dimensions": "1200 × 628px",
+          "notes": "Single stat, source footer, logo top-left"
+        },
+        {
+          "platform": "Instagram",
+          "dimensions": "1080 × 1080px",
+          "notes": "Large stat, minimal text, illustration right"
+        },
+        {
+          "platform": "Twitter/X",
+          "dimensions": "1600 × 900px",
+          "notes": "Wide format, stat left-aligned, white logo"
+        }
+      ]
+    },
+    "website": {
+      "foundation": "Dark navy with white typography",
+      "layout": "Structured grid, clean, content-first",
+      "accents": "Purple headlines",
+      "tone": "Professional, research-led, credible"
+    },
+    "researchReports": {
+      "background": "Navy",
+      "headlines": "Poppins, Orange or Purple accent",
+      "description": "Concise, data-driven. Navy backgrounds, photography-led covers."
+    }
+  }
+}
+</script>
 </head>
 <body>
 
@@ -1181,6 +1614,12 @@
         <div class="cover-meta-value">All Teams &amp; Partners</div>
       </div>
     </div>
+
+    <a href="https://www.dropbox.com/scl/fo/2dmazrwys3f3hqprc2fsa/AEXLm6HG_AJM8hOBTyqUFTA?rlkey=yz0f15sm1wdi98rwwla2v631m&st=z8y6j6ov&dl=0" target="_blank" rel="noopener"
+      style="display:inline-flex;align-items:center;gap:10px;margin-top:32px;padding:14px 28px;background:#FA9628;border-radius:6px;color:#000;font-family:'Poppins',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.04em;text-decoration:none;text-transform:uppercase;width:fit-content;transition:opacity 0.15s;" onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download Brand Assets
+    </a>
   </div>
 
   <!-- 1.0 OVERVIEW -->
@@ -1900,42 +2339,53 @@
           <span class="sub-section-title">Icons</span>
         </div>
         <p class="sub-section-desc">All Incisiv icons use a consistent <strong>outline/line style</strong> — never filled. Stroke weight: 1.5px. Rounded line caps and joins. Always monochrome — match the icon color to the text color of its surface (dark on light, light on dark). Do not mix outline icons with filled icons in the same layout.</p>
+
+        <div style="display:flex;align-items:center;gap:16px;margin:20px 0 24px;padding:16px 20px;background:#f7f7f5;border:1px solid #e5e5e5;border-left:3px solid #131c4e;border-radius:6px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#131c4e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <div>
+            <p style="font-size:12px;font-weight:700;color:#111;margin:0 0 4px;letter-spacing:0.03em;">Icon Library — Lucide Icons</p>
+            <p style="font-size:12px;color:#555;margin:0;line-height:1.6;">All Incisiv icons are sourced from <strong>Lucide Icons</strong> — an open-source, MIT-licensed outline icon library. When adding or extending the icon set, always use Lucide to maintain visual consistency. Reference icons by their exact Lucide name (e.g. <code style="background:#e8e8e8;padding:1px 5px;border-radius:3px;font-size:11px;">bar-chart-2</code>, <code style="background:#e8e8e8;padding:1px 5px;border-radius:3px;font-size:11px;">map-pin</code>).<br>
+            <a href="https://lucide.dev/icons" target="_blank" style="color:#131c4e;font-weight:600;text-decoration:none;border-bottom:1px solid #131c4e;">lucide.dev/icons</a> &nbsp;·&nbsp;
+            <span style="color:#888;font-size:11px;">CDN: unpkg.com/lucide@latest/dist/umd/lucide.min.js</span></p>
+          </div>
+        </div>
+
         <div class="icons-grid">
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.36 1-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C9.4 21 3 14.6 3 6.5c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.23 1.01L6.6 10.8z"/></svg><span class="icon-cell-label">Phone</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span class="icon-cell-label">Web</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span class="icon-cell-label">Location</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span class="icon-cell-label">Email</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span class="icon-cell-label">Person</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span class="icon-cell-label">Search</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span class="icon-cell-label">Clock</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span class="icon-cell-label">Message</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg><span class="icon-cell-label">Settings</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg><span class="icon-cell-label">Network</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg><span class="icon-cell-label">Trust</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M3 9l1-5h16l1 5"/><path d="M3 9a2 2 0 0 0 4 0 2 2 0 0 0 4 0 2 2 0 0 0 4 0 2 2 0 0 0 4 0"/><path d="M5 20h14a1 1 0 0 0 1-1v-8H4v8a1 1 0 0 0 1 1z"/></svg><span class="icon-cell-label">Store</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><span class="icon-cell-label">Screen</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span class="icon-cell-label">Analytics</span></div>
+          <div class="icon-cell"><i data-lucide="phone"></i><span class="icon-cell-label">Phone</span></div>
+          <div class="icon-cell"><i data-lucide="globe"></i><span class="icon-cell-label">Web</span></div>
+          <div class="icon-cell"><i data-lucide="map-pin"></i><span class="icon-cell-label">Location</span></div>
+          <div class="icon-cell"><i data-lucide="mail"></i><span class="icon-cell-label">Email</span></div>
+          <div class="icon-cell"><i data-lucide="user"></i><span class="icon-cell-label">Person</span></div>
+          <div class="icon-cell"><i data-lucide="search"></i><span class="icon-cell-label">Search</span></div>
+          <div class="icon-cell"><i data-lucide="clock"></i><span class="icon-cell-label">Clock</span></div>
+          <div class="icon-cell"><i data-lucide="message-square"></i><span class="icon-cell-label">Message</span></div>
+          <div class="icon-cell"><i data-lucide="settings"></i><span class="icon-cell-label">Settings</span></div>
+          <div class="icon-cell"><i data-lucide="wifi"></i><span class="icon-cell-label">Network</span></div>
+          <div class="icon-cell"><i data-lucide="shield-check"></i><span class="icon-cell-label">Trust</span></div>
+          <div class="icon-cell"><i data-lucide="store"></i><span class="icon-cell-label">Store</span></div>
+          <div class="icon-cell"><i data-lucide="monitor"></i><span class="icon-cell-label">Screen</span></div>
+          <div class="icon-cell"><i data-lucide="activity"></i><span class="icon-cell-label">Analytics</span></div>
         
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><span class="icon-cell-label">Desktop</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg><span class="icon-cell-label">Mobile</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span class="icon-cell-label">Pulse</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg><span class="icon-cell-label">Bar Chart</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg><span class="icon-cell-label">Trending Up</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span class="icon-cell-label">Info</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span class="icon-cell-label">Document</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg><span class="icon-cell-label">Package</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="icon-cell-label">Cart</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg><span class="icon-cell-label">Card</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span class="icon-cell-label">Team</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span class="icon-cell-label">Home</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span class="icon-cell-label">Lock</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg><span class="icon-cell-label">Terminal</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg><span class="icon-cell-label">Upload</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><span class="icon-cell-label">Download</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg><span class="icon-cell-label">Sun</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span class="icon-cell-label">Shield</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg><span class="icon-cell-label">Briefcase</span></div>
-          <div class="icon-cell"><svg fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><span class="icon-cell-label">Revenue</span></div>
+          <div class="icon-cell"><i data-lucide="monitor"></i><span class="icon-cell-label">Desktop</span></div>
+          <div class="icon-cell"><i data-lucide="smartphone"></i><span class="icon-cell-label">Mobile</span></div>
+          <div class="icon-cell"><i data-lucide="activity"></i><span class="icon-cell-label">Pulse</span></div>
+          <div class="icon-cell"><i data-lucide="bar-chart-2"></i><span class="icon-cell-label">Bar Chart</span></div>
+          <div class="icon-cell"><i data-lucide="trending-up"></i><span class="icon-cell-label">Trending Up</span></div>
+          <div class="icon-cell"><i data-lucide="info"></i><span class="icon-cell-label">Info</span></div>
+          <div class="icon-cell"><i data-lucide="file-text"></i><span class="icon-cell-label">Document</span></div>
+          <div class="icon-cell"><i data-lucide="package"></i><span class="icon-cell-label">Package</span></div>
+          <div class="icon-cell"><i data-lucide="shopping-cart"></i><span class="icon-cell-label">Cart</span></div>
+          <div class="icon-cell"><i data-lucide="credit-card"></i><span class="icon-cell-label">Card</span></div>
+          <div class="icon-cell"><i data-lucide="users"></i><span class="icon-cell-label">Team</span></div>
+          <div class="icon-cell"><i data-lucide="home"></i><span class="icon-cell-label">Home</span></div>
+          <div class="icon-cell"><i data-lucide="lock"></i><span class="icon-cell-label">Lock</span></div>
+          <div class="icon-cell"><i data-lucide="terminal"></i><span class="icon-cell-label">Terminal</span></div>
+          <div class="icon-cell"><i data-lucide="upload"></i><span class="icon-cell-label">Upload</span></div>
+          <div class="icon-cell"><i data-lucide="download"></i><span class="icon-cell-label">Download</span></div>
+          <div class="icon-cell"><i data-lucide="sun"></i><span class="icon-cell-label">Sun</span></div>
+          <div class="icon-cell"><i data-lucide="shield"></i><span class="icon-cell-label">Shield</span></div>
+          <div class="icon-cell"><i data-lucide="briefcase"></i><span class="icon-cell-label">Briefcase</span></div>
+          <div class="icon-cell"><i data-lucide="trending-up"></i><span class="icon-cell-label">Revenue</span></div>
         </div>
       </div>
 
@@ -2186,6 +2636,20 @@
     </div>
   </div>
 
+  <!-- END OF PAGE CTA -->
+  <div style="background:var(--navy);padding:72px;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;">
+    <div>
+      <p style="font-family:'Poppins',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#FA9628;margin:0 0 10px;">Brand Assets</p>
+      <h2 style="font-family:'Poppins',sans-serif;font-size:32px;font-weight:700;color:#fff;margin:0 0 12px;line-height:1.2;">Ready to build with Incisiv's brand?</h2>
+      <p style="font-size:14px;color:rgba(255,255,255,0.55);margin:0;max-width:480px;line-height:1.7;">Download the complete asset kit — logos, color swatches, typography files, icon sets, and templates — everything you need to create on-brand materials.</p>
+    </div>
+    <a href="https://www.dropbox.com/scl/fo/2dmazrwys3f3hqprc2fsa/AEXLm6HG_AJM8hOBTyqUFTA?rlkey=yz0f15sm1wdi98rwwla2v631m&st=z8y6j6ov&dl=0" target="_blank" rel="noopener"
+      style="display:inline-flex;align-items:center;gap:10px;padding:16px 32px;background:#FA9628;border-radius:6px;color:#000;font-family:'Poppins',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.04em;text-decoration:none;text-transform:uppercase;white-space:nowrap;flex-shrink:0;transition:opacity 0.15s;" onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download Brand Assets
+    </a>
+  </div>
+
 </main>
 
 <div class="toast" id="toast"></div>
@@ -2259,5 +2723,9 @@
   })();
 
 </script>
+
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>lucide.createIcons();</script>
 </body>
 </html>
