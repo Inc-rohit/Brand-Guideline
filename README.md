@@ -11,20 +11,26 @@ Official brand identity system for Incisiv — a B2B retail technology intellige
 
 ```
 Brand-Guideline/
-├── index.html                    # Full brand guideline (self-contained, agent-ready)
-├── incisiv-brand-guidelines.html # Original source file
-├── assets/
-│   ├── logo-white.png            # White logo (1213×292px) — use on dark backgrounds
-│   └── logo-black.png            # Black logo (1778×428px) — use on light backgrounds
-├── README.md                     # This file
-└── llms.txt                      # Plain-text brand summary for AI agents
+├── incisiv-brand-guidelines.html        # Full brand guideline (self-contained, agent-ready)
+├── README.md                            # This file
+├── llms.txt                             # Plain-text brand summary for AI agents
+└── Assets/
+    ├── Logo/
+    │   └── Incisiv Logo.svg             # Master logo (use this for all production work)
+    ├── Photography/
+    │   ├── shutterstock_offset_1877335966.jpg   # Aerial & Architectural
+    │   ├── shutterstock_offset_1958691904.jpg   # Infrastructure & Supply Chain
+    │   └── stills_63723_gs-co.jpg               # Technology & Retail Environments
+    └── Social Posts/
+        ├── Post 1.jpg                   # LinkedIn stat card example
+        └── Post 2.jpg                   # Instagram stat card example
 ```
 
 ---
 
 ## For AI Agents & Code Generators
 
-All brand tokens are embedded in `index.html` as structured JSON:
+All brand tokens are embedded in `incisiv-brand-guidelines.html` as structured JSON:
 
 ```html
 <script type="application/json" id="incisiv-brand-data">...</script>
@@ -87,34 +93,49 @@ Or read `llms.txt` for a plain-text summary of all tokens.
 
 ---
 
-## Logo Usage
+## Logo
 
-| Background | Logo Version |
-|---|---|
-| Dark (black, navy) | White logo (`assets/logo-white.png`) |
-| Light (white, gray) | Black logo (`assets/logo-black.png`) |
-
-**Rules:** Never stretch, rotate, recolor, add effects, or place in a badge.  
-**Clearspace:** Minimum = logomark height on all four sides.  
-**Minimum digital size:** 150px wide (full logo), 50px (logomark only)
+- **Master file:** `Assets/Logo/Incisiv Logo.svg` — use for all production work
+- **On dark backgrounds** (black, navy): use white version of the logo
+- **On light backgrounds** (white, gray): use black version of the logo
+- **Clearspace:** minimum = logomark height on all four sides
+- **Minimum digital size:** 150px wide (full logo), 50px (logomark only)
+- **Never:** stretch, rotate, recolor, add effects, or place in a badge
 
 ---
 
-## Dependencies (External — No Install Required)
+## Photography
 
-| Library | Version | CDN | Purpose |
-|---|---|---|---|
-| Lucide Icons | latest | `unpkg.com/lucide@latest/dist/umd/lucide.min.js` | Icon set |
-| Poppins | — | Google Fonts | Headline font |
-| Libre Franklin | — | Google Fonts | Body font |
+All photos are in `Assets/Photography/`. Three approved directions:
 
-No build step. No npm. No frameworks. The `index.html` is fully self-contained — all images are base64-embedded, all styles are inline.
+| File | Direction | Style |
+|---|---|---|
+| `shutterstock_offset_1877335966.jpg` | Aerial & Architectural | Cool-toned, wide angle, sharp focus |
+| `shutterstock_offset_1958691904.jpg` | Infrastructure & Supply Chain | Dramatic scale, geometric, landscape |
+| `stills_63723_gs-co.jpg` | Technology & Retail Environments | Symmetrical, organised, cool tones |
 
 ---
 
-## No Auth Required
+## Social Media References
 
-The site is fully public. No password, no login, no API key needed.
+Templates in `Assets/Social Posts/`:
+
+| File | Format | Dimensions |
+|---|---|---|
+| `Post 1.jpg` | LinkedIn stat card | 1200 × 628px |
+| `Post 2.jpg` | Instagram stat card | 1080 × 1080px |
+
+---
+
+## Dependencies (No Install Required)
+
+| Library | CDN | Purpose |
+|---|---|---|
+| Lucide Icons | `unpkg.com/lucide@latest/dist/umd/lucide.min.js` | Icons |
+| Poppins | Google Fonts | Headline font |
+| Libre Franklin | Google Fonts | Body font |
+
+No build step. No npm. No frameworks. `incisiv-brand-guidelines.html` is fully self-contained — all images base64-embedded, styles inline.
 
 ---
 
