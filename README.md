@@ -3,7 +3,7 @@
 Official brand identity system for Incisiv — a B2B retail technology intelligence company.
 
 **Live site:** https://brand-guideline-three.vercel.app  
-**Download assets:** https://github.com/Inc-rohit/Brand-Guideline/tree/main/Assets
+**Download assets:** https://www.dropbox.com/scl/fo/2dmazrwys3f3hqprc2fsa/AEXLm6HG_AJM8hOBTyqUFTA?rlkey=yz0f15sm1wdi98rwwla2v631m&st=q9t6gdpq&dl=0
 
 ---
 
