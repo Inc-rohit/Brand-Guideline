@@ -1,0 +1,52 @@
+# Incisiv Brand Guidelines — Agent Reference
+# Version: 1.0 | April 2026
+# Full guidelines: https://brand-guideline-three.vercel.app
+# Download assets: https://www.dropbox.com/scl/fo/2dmazrwys3f3hqprc2fsa/AEXLm6HG_AJM8hOBTyqUFTA?rlkey=yz0f15sm1wdi98rwwla2v631m&st=z8y6j6ov&dl=0
+
+Incisiv is a B2B retail technology intelligence company.
+
+## Colors
+- Black #000000 — primary, dominant (cover backgrounds, headlines, logo)
+- Navy #131c4e — secondary workhorse (section headers, dark UI)
+- Purple #7B2D8B — tertiary accent (headlines, emphasis; never large backgrounds)
+- Dark Teal #14314D — tertiary accent (gradients, callout boxes)
+- Orange #FA9628 — high-energy accent (CTAs only; max ONE per layout)
+- Neutrals: Dark Gray #5b5b5b, Mid Gray #a0a0a0, Light Gray #e8e8e8, White #ffffff
+
+## Gradients (3 approved)
+- Nebula: linear-gradient(135deg, #131c4e 0%, #7B2D8B 100%)
+- Deep Ocean: linear-gradient(135deg, #131c4e 0%, #14314D 100%)
+- Midnight: linear-gradient(135deg, #000000 0%, #131c4e 100%)
+- Rule: Never use gradients on body text
+
+## Typography
+- Headlines: Poppins (weights 300–800) — Google Fonts — EXCLUSIVE to headlines, display, callouts
+- Body/UI: Libre Franklin (400, 500, 600, italic) — Google Fonts — all non-headline text
+- Scale: H1 Poppins 700 40px / H2 Poppins 600 24px / H3 Poppins 500 18px / Body Franklin 400 16px / Caption Franklin 400 13px
+- Never substitute either font
+
+## Icons
+- Library: Lucide Icons — https://lucide.dev/icons — MIT license
+- CDN: https://unpkg.com/lucide@latest/dist/umd/lucide.min.js
+- Style: Outline only, 1.5px stroke, rounded caps and joins — NEVER filled
+- Always reference by exact Lucide name (e.g. bar-chart-2, map-pin, trending-up)
+
+## Logo
+- Primary lockup: logomark + logotype — DEFAULT for all materials
+- Clearspace: minimum = logomark height on all four sides
+- White logo on dark (black, navy); black logo on light (white, gray)
+- Never stretch, rotate, recolor, add effects, or place in a badge
+
+## Tone of Voice
+- Adaptable, Purposeful, Collaborative, Future-Driven
+- Authoritative in research, warm at events, energetic on social
+
+## Social Media Dimensions
+- LinkedIn: 1200 × 628px | Instagram: 1080 × 1080px | Twitter/X: 1600 × 900px
+- Format: Stat cards — logo top-left, Poppins 800 stat, descriptor, footer
+- Always dark background (navy/black), always white logo
+
+## Machine-Readable Data
+Full structured brand tokens (JSON) are embedded in the HTML at:
+  <script type="application/json" id="incisiv-brand-data">
+Parse with: JSON.parse(document.getElementById('incisiv-brand-data').textContent)
