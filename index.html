@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="Incisiv Brand Guidelines 2026 — official brand token reference covering colors, typography, logo usage, icons (Lucide), photography, and application templates." />
+  <meta name="author" content="Incisiv" />
+  <meta name="keywords" content="Incisiv, brand guidelines, design tokens, colors, typography, Poppins, Libre Franklin, Lucide icons, navy, orange" />
+  <meta property="og:title" content="Incisiv Brand Guidelines 2026" />
+  <meta property="og:description" content="Official brand system for Incisiv — colors, typography, logo, icons, and application templates." />
   <title>Incisiv's Brand Guideline 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -1130,6 +1135,430 @@
       color: white;
     }
 </style>
+
+<!-- ══════════════════════════════════════════════════════════════════
+     INCISIV BRAND DATA — Machine-readable token reference
+     For AI agents, code generators, and design tools.
+     Parse: JSON.parse(document.getElementById('incisiv-brand-data').textContent)
+     All brand decisions — colors, typography, icons, logo rules — are encoded here.
+════════════════════════════════════════════════════════════════════ -->
+<script type="application/json" id="incisiv-brand-data">
+{
+  "_meta": {
+    "document": "Incisiv Brand Guidelines",
+    "version": "1.0",
+    "published": "April 2026",
+    "audience": "All Teams & Partners",
+    "assetsUrl": "https://www.dropbox.com/scl/fo/2dmazrwys3f3hqprc2fsa/AEXLm6HG_AJM8hOBTyqUFTA?rlkey=yz0f15sm1wdi98rwwla2v631m&st=z8y6j6ov&dl=0",
+    "purpose": "Machine-readable brand token reference for AI agents, code generators, and design tools"
+  },
+  "brand": {
+    "name": "Incisiv",
+    "industry": "B2B Retail Technology Intelligence",
+    "positioning": {
+      "purpose": "To empower retail and consumer industry leaders with the intelligence, insights, and connections needed to accelerate digital transformation and drive measurable business outcomes.",
+      "vision": "To be the world's most trusted intelligence platform for the retail and consumer industry — enabling leaders to make faster, smarter decisions with confidence.",
+      "mission": "To provide industry leaders with actionable research, peer connections, and strategic advisory that accelerates the adoption of transformative technologies."
+    },
+    "values": [
+      "Creative",
+      "Accurate",
+      "Inclusive",
+      "Bold",
+      "Reliable"
+    ],
+    "toneOfVoice": {
+      "Adaptable": "Flex voice to suit audience — authoritative in research, warm at events, energetic on social. Confidence without rigidity.",
+      "Purposeful": "Every word earns its place. Communicate with clarity and intent — no filler, no jargon for its own sake.",
+      "Collaborative": "Speak with audience, not at them. Invite dialogue, acknowledge perspectives, champion shared progress.",
+      "Future-Driven": "Lead with what's next. Forward-looking, optimistic, grounded in real forces shaping the industry."
+    }
+  },
+  "colors": {
+    "primary": [
+      {
+        "name": "Black",
+        "token": "--black",
+        "hex": "#000000",
+        "rgb": "0, 0, 0",
+        "cmyk": "0, 0, 0, 100",
+        "role": "Primary. Cover backgrounds, primary headlines, logo. Dominant — drives authority and confidence."
+      }
+    ],
+    "secondary": [
+      {
+        "name": "Navy",
+        "token": "--navy",
+        "hex": "#131c4e",
+        "rgb": "19, 28, 78",
+        "cmyk": "76, 64, 0, 69",
+        "role": "Secondary. Section headers, chapter backgrounds, dark UI components. Brand workhorse."
+      }
+    ],
+    "tertiary": [
+      {
+        "name": "Purple",
+        "token": "--purple",
+        "hex": "#7B2D8B",
+        "rgb": "123, 45, 139",
+        "cmyk": "12, 68, 0, 45",
+        "role": "Accent. Headlines and emphasis in research reports and event materials. Never use as a large background. Pairs with navy for headings."
+      },
+      {
+        "name": "Dark Teal",
+        "token": "--teal",
+        "hex": "#14314D",
+        "rgb": "20, 49, 77",
+        "cmyk": "74, 36, 0, 70",
+        "role": "Accent. Gradient backgrounds paired with navy. Report cards, callout boxes, dark UI components."
+      },
+      {
+        "name": "Orange",
+        "token": "--orange",
+        "hex": "#FA9628",
+        "rgb": "250, 150, 40",
+        "cmyk": "0, 40, 84, 2",
+        "role": "High-energy accent. CTAs, data callout numbers, event highlights. SPARINGLY — maximum one element per layout."
+      }
+    ],
+    "neutrals": [
+      {
+        "name": "Dark Gray",
+        "token": "--gray-dark",
+        "hex": "#5b5b5b",
+        "role": "Secondary body text"
+      },
+      {
+        "name": "Mid Gray",
+        "token": "--gray-mid",
+        "hex": "#a0a0a0",
+        "role": "Metadata, captions"
+      },
+      {
+        "name": "Light Gray",
+        "token": "--gray-light",
+        "hex": "#e8e8e8",
+        "role": "Subtle dividers, backgrounds"
+      },
+      {
+        "name": "White",
+        "token": "--white",
+        "hex": "#ffffff",
+        "role": "Light surfaces, reversed text"
+      }
+    ],
+    "gradients": [
+      {
+        "name": "Nebula",
+        "css": "linear-gradient(135deg, #131c4e 0%, #7B2D8B 100%)",
+        "stops": [
+          "#131c4e",
+          "#7B2D8B"
+        ],
+        "angle": 135,
+        "use": "Covers, hero backgrounds, event materials, data visualizations"
+      },
+      {
+        "name": "Deep Ocean",
+        "css": "linear-gradient(135deg, #131c4e 0%, #14314D 100%)",
+        "stops": [
+          "#131c4e",
+          "#14314D"
+        ],
+        "angle": 135,
+        "use": "Covers, hero backgrounds"
+      },
+      {
+        "name": "Midnight",
+        "css": "linear-gradient(135deg, #000000 0%, #131c4e 100%)",
+        "stops": [
+          "#000000",
+          "#131c4e"
+        ],
+        "angle": 135,
+        "use": "Covers, hero backgrounds"
+      }
+    ],
+    "rules": [
+      "Never use gradients on body text",
+      "Tertiary accent colors never as large backgrounds",
+      "Orange: maximum one element per layout",
+      "White logo on dark backgrounds (black, navy); black logo on light backgrounds (white, light gray)"
+    ]
+  },
+  "typography": {
+    "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;1,400&display=swap",
+    "fonts": [
+      {
+        "name": "Poppins",
+        "source": "Google Fonts",
+        "use": "All headlines, display text, large callouts, UI labels",
+        "weights": [
+          300,
+          400,
+          500,
+          600,
+          700,
+          800
+        ],
+        "rule": "Exclusive to headlines, display, callouts. Never substitute."
+      },
+      {
+        "name": "Libre Franklin",
+        "source": "Google Fonts",
+        "use": "Body copy, UI elements, captions, buttons",
+        "weights": [
+          400,
+          500,
+          600
+        ],
+        "styles": [
+          "italic"
+        ],
+        "rule": "All non-headline text. Never substitute."
+      }
+    ],
+    "scale": [
+      {
+        "role": "H1",
+        "font": "Poppins",
+        "weight": 700,
+        "size": "40px",
+        "lineHeight": 1.15,
+        "letterSpacing": "-0.02em",
+        "use": "Page titles, report headers, hero headlines"
+      },
+      {
+        "role": "H2",
+        "font": "Poppins",
+        "weight": 600,
+        "size": "24px",
+        "lineHeight": 1.3,
+        "letterSpacing": "-0.01em",
+        "use": "Section titles, slide headers, card titles"
+      },
+      {
+        "role": "H3",
+        "font": "Poppins",
+        "weight": 500,
+        "size": "18px",
+        "lineHeight": 1.4,
+        "use": "Sub-sections, callout titles, sidebar headers"
+      },
+      {
+        "role": "Body",
+        "font": "Libre Franklin",
+        "weight": 400,
+        "size": "16px",
+        "lineHeight": 1.75,
+        "use": "Paragraphs, descriptions, report body copy"
+      },
+      {
+        "role": "Caption",
+        "font": "Libre Franklin",
+        "weight": 400,
+        "size": "13px",
+        "lineHeight": 1.6,
+        "color": "#999999",
+        "use": "Image captions, footnotes, metadata"
+      },
+      {
+        "role": "Label",
+        "font": "Libre Franklin",
+        "weight": 600,
+        "size": "11px",
+        "letterSpacing": "0.1em",
+        "textTransform": "uppercase",
+        "use": "Section labels, tags, category markers"
+      },
+      {
+        "role": "Button",
+        "font": "Libre Franklin",
+        "weight": 600,
+        "size": "14px",
+        "borderRadius": "4px",
+        "padding": "10px 24px",
+        "use": "CTAs, navigation actions, form buttons"
+      }
+    ]
+  },
+  "logo": {
+    "components": {
+      "logomark": "Abstract symbol — cluster of connected nodes representing data, connectivity, and insight. Use alone only in favicons, social avatars, or where brand is already established.",
+      "logotype": "Wordmark INCISIV. Wide letter-spacing, bold weight.",
+      "primaryLockup": "Logomark + logotype combined. DEFAULT — use unless space constraints require logomark alone."
+    },
+    "clearspace": "Minimum clearspace equals height of the logomark on all four sides.",
+    "minimumSize": {
+      "logomarkOnly": {
+        "print": "10mm",
+        "digital": "50px",
+        "use": "Favicons, social avatars, tight spaces"
+      },
+      "logotypeOnly": {
+        "print": "50mm",
+        "digital": "150px",
+        "use": "When brand context already established"
+      },
+      "fullLogo": {
+        "print": "50mm",
+        "digital": "150px",
+        "use": "Default usage across all materials"
+      }
+    },
+    "backgroundUsage": {
+      "onWhite": "Black logo",
+      "onLightGray": "Black logo",
+      "onBlack": "White logo",
+      "onNavy": "White logo",
+      "rule": "Never place on busy or low-contrast backgrounds"
+    },
+    "misuse": [
+      "Do not stretch or distort",
+      "Do not rotate at any angle",
+      "Do not place in a container or badge",
+      "Do not flip horizontally",
+      "Do not flip vertically",
+      "Do not skew or shear the logo"
+    ]
+  },
+  "icons": {
+    "library": "Lucide Icons",
+    "url": "https://lucide.dev/icons",
+    "cdn": "https://unpkg.com/lucide@latest/dist/umd/lucide.min.js",
+    "license": "MIT",
+    "style": "Outline/line — never filled",
+    "strokeWeight": "1.5px",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "color": "Monochrome — match icon color to text color of its surface",
+    "rules": [
+      "Always use outline style, never filled icons",
+      "Reference icons by exact Lucide name (e.g. bar-chart-2, map-pin)",
+      "Do not mix outline icons with filled icons in the same layout"
+    ],
+    "approvedIcons": [
+      "phone",
+      "globe",
+      "map-pin",
+      "mail",
+      "user",
+      "search",
+      "clock",
+      "message-square",
+      "settings",
+      "wifi",
+      "shield-check",
+      "store",
+      "monitor",
+      "activity",
+      "smartphone",
+      "bar-chart-2",
+      "trending-up",
+      "info",
+      "file-text",
+      "package",
+      "shopping-cart",
+      "credit-card",
+      "users",
+      "home",
+      "lock",
+      "terminal",
+      "upload",
+      "download",
+      "sun",
+      "shield",
+      "briefcase"
+    ]
+  },
+  "photography": {
+    "principle": "Precise, professional, grounded in the real world of retail and commerce. Forward-looking and credible — not generic stock.",
+    "directions": [
+      {
+        "id": "direction-01",
+        "title": "Aerial & Architectural",
+        "description": "Top-down views of infrastructure and logistics. Sense of scale, precision, and command.",
+        "tags": [
+          "Cool-toned",
+          "Sharp focus",
+          "Wide angle"
+        ]
+      },
+      {
+        "id": "direction-02",
+        "title": "Infrastructure & Supply Chain",
+        "description": "Elevated perspectives on transportation, distribution, and commerce networks. Forward-looking and precise.",
+        "tags": [
+          "Dramatic scale",
+          "Geometric",
+          "Landscape"
+        ]
+      },
+      {
+        "id": "direction-03",
+        "title": "Technology & Retail Environments",
+        "description": "Automated and organised retail spaces. Symmetrical, clean, forward-looking.",
+        "tags": [
+          "Symmetrical",
+          "Organised",
+          "Cool tones"
+        ]
+      }
+    ],
+    "dos": [
+      "Use bright, high-contrast images with clear subject matter",
+      "Use aerial or architectural photography for editorial contexts",
+      "Maintain consistent cool-toned color treatment across all imagery",
+      "Prefer wide, landscape-oriented images for editorial use"
+    ],
+    "donts": [
+      "Do not use blurry or out-of-focus photography",
+      "Do not use warm, oversaturated, or heavily filtered images",
+      "Do not use generic stock imagery that feels impersonal"
+    ]
+  },
+  "applications": {
+    "socialMedia": {
+      "primaryFormat": "Stat cards — logo top-left, large bold statistic (Poppins weight 800), one-line descriptor, source/report footer",
+      "backgrounds": [
+        "Navy #131c4e",
+        "Black #000000",
+        "Navy-to-teal gradient"
+      ],
+      "logoVersion": "Always white logo on dark backgrounds",
+      "rule": "Never place colored text on light backgrounds",
+      "formats": [
+        {
+          "platform": "LinkedIn",
+          "dimensions": "1200 × 628px",
+          "notes": "Single stat, source footer, logo top-left"
+        },
+        {
+          "platform": "Instagram",
+          "dimensions": "1080 × 1080px",
+          "notes": "Large stat, minimal text, illustration right"
+        },
+        {
+          "platform": "Twitter/X",
+          "dimensions": "1600 × 900px",
+          "notes": "Wide format, stat left-aligned, white logo"
+        }
+      ]
+    },
+    "website": {
+      "foundation": "Dark navy with white typography",
+      "layout": "Structured grid, clean, content-first",
+      "accents": "Purple headlines",
+      "tone": "Professional, research-led, credible"
+    },
+    "researchReports": {
+      "background": "Navy",
+      "headlines": "Poppins, Orange or Purple accent",
+      "description": "Concise, data-driven. Navy backgrounds, photography-led covers."
+    }
+  }
+}
+</script>
 </head>
 <body>
 
